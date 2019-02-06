@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8" />
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <!-- Fonts -->
+    <link href="/font/stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <!-- Styles -->
+    <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/nilenso.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/scrollnav.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="nilenso-header">
+      <div class="header-logo">
+        <img class="header-logo-image" src="/images/nilenso-systems-200.png" alt="nilenso systems logo" />
+        <a class="header-link logo-name" href="/">nilenso systems</a>
+      </div>
+
+      {% include navigation.html %}
+    </header>
+
+    <div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>

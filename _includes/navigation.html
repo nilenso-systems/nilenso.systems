@@ -1,0 +1,11 @@
+<nav>
+  <div class="page-links">
+    {% for item in site.data.navigation %}
+    <a class="header-link page-link {% if page.url == item.link  %}active{% endif %}" href="{{ item.link }}">
+      {{ item.name }}
+    </a>
+    {% endfor %}
+  </div>
+
+  <i class="show-navigation page-link navobile-mobile-only icon-list"></i>
+</nav>
