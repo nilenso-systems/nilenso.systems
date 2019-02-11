@@ -1,0 +1,27 @@
+- name: Samsung
+  logo: samsung.png
+  text: Samsung Open Source Group
+
+- name: SoftBank Robotocs
+  logo: softbank-robotics.png
+  text: SoftBank Robotics
+
+- name: OpenWebRTC
+  logo: openwebrtc.png
+  text: OpenWebRTC (by Ericsson Research)
+
+- name: LG
+  logo: lg.png
+  text: LG Soft India Pvt. Ltd.
+
+- name: Soundwall
+  logo: soundwall.png
+  text: Soundwall
+
+- name: Lensbricks
+  logo: lensbricks.png
+  text: Lensbricks
+
+- name: MedXChange
+  logo: medxchange.png
+  text: MedXChange

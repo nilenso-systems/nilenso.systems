@@ -1,8 +1,8 @@
-#- name: Home
-#  link: /
-#- name: Work
-#  link: /projects.html
+- name: Home
+  link: /
+- name: Projects
+  link: /#projects
 #- name: Jobs
 #  link: /jobs.html
-#- name: Contact
-#  link: /contact.html
+- name: Contact
+  link: /#contact
