@@ -31,3 +31,5 @@ tags
 # local bundle output
 _bundle/
 .bundle/
+
+.netlify/
