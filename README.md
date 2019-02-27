@@ -9,7 +9,12 @@ $ bundle exec jekyll serve
 
 # Deployment
 
-Jekyll builds the static version of the site in `_site`. Just rsync that over
-to wherever.
+Jekyll builds the static version of the site in `_site`. This is currently
+deployed with:
 
-Or better yet, set up CI for the website.
+```console
+$ netlify deploy --prod
+```
+
+Netlify has issues with deploying automatically due to Bundler 2.0 not being
+available. That should be fixed soon.
