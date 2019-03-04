@@ -197,6 +197,13 @@ ul {
 .nilenso-logo {
   width: 400px;
   margin: 50px;
+  display: inline;
+}
+
+.nilenso-logo-narrow {
+  width: 200px;
+  margin: 50px;
+  display: none;
 }
 
 img.human {
@@ -378,6 +385,14 @@ img.human {
 
   .contact-address {
     padding-top: 10px;
+  }
+
+  .nilenso-logo {
+    display: none;
+  }
+
+  .nilenso-logo-narrow {
+    display: inline;
   }
 }
 
