@@ -6,19 +6,27 @@
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 
-    <!-- Fonts -->
-    <link href="/font/stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <!-- Styles -->
-    <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="/css/nilenso.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="/css/scrollnav.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <!-- mobile-friendly -->
+    <!-- Mobile-friendly -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.bullseye.js"></script>
+    <script type="text/javascript" src="/js/jquery.navobile.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollnav.js"></script>
+
+    <!-- Styles -->
+    <link href="/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/nilenso.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/jquery.navobile.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/scrollnav.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts -->
+    <link href="/font/stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -34,5 +42,31 @@
     <div class="content">
       {{ content }}
     </div>
+
+    <script>
+      $(document).ready(function() {
+        // open external links in new tabs
+        var host = window.location.hostname;
+        $("body").on("click", "a", function() {
+          if (this.protocol.indexOf("http") == 0 && this.hostname != host) {
+            window.open(this.href, "_blank");
+            return false;
+          } else {
+            return true;
+          }
+        });
+
+        $('.page-links').navobile({
+          'content': '.content',
+          'cta': '.show-navigation',
+          'changeDOM': true
+        });
+        new ScrollNavigation({
+          pageSectionSelector: ".navigableSection",
+          viewportOffsetTop: 200,
+          viewportOffsetHeight: -500
+        });
+      });
+    </script>
   </body>
 </html>
