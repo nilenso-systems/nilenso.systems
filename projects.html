@@ -10,12 +10,10 @@ title: Nilenso Systems - Projects
 
   <div class="casestudies bordered-section">
     {% for client in site.data.clients %}
-    <a class="person-link casestudy-client-logo"{% if client.url %} href="{{ client.url }}" target="_blank" {% endif %}>
-      <img class="testimonial-logo grayscale"
-           src="/images/clients/{{ client.logo }}"
-           alt="{{ client.text }}"
-           title="{{ client.text }}" />
-    </a>
+    <img class="testimonial-logo grayscale"
+         src="/images/clients/{{ client.logo }}"
+         alt="{{ client.text }}"
+         title="{{ client.text }}" />
     {% endfor %}
   </div>
 </div>
