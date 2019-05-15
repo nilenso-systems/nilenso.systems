@@ -1,0 +1,24 @@
+- id: arun
+  name: Arun Raghavan
+  image: arun.png
+  github: ford-prefect
+  twitter: louiswu
+  linkedin: arunsraghavan
+  bio: Arun started nilenso systems because loves working on systems software
+       and all the plumbing that makes computers useful for humans, and wants
+       you to join in his excitement. He has been helping clients build
+       products using GStreamer, PulseAudio, and other open source projects for
+       almost a decade now. He loves to teach, make things, listen to music,
+       and look at the night sky through his telescope.
+
+- id: deepa
+  name: Deepa Venkatraman
+  image: deepa.png
+  github: dvenkatr
+  twitter: deepa_v
+  linkedin: deepavenkatraman
+  bio: Deepa does everything. She runs <a href="https://nilenso.com">nilenso</a>,
+       learns Haskell, reads books, speaks seven human languages (at the
+       moment), and also helps with business strategy, finance and operations
+       at nilenso systems. She kept herself busy in the past by starting
+       startups, running businesses, crunching big numbers and building robots.

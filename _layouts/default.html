@@ -25,6 +25,10 @@
     <link href="/css/jquery.navobile.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/css/scrollnav.css" media="screen" rel="stylesheet" type="text/css" />
 
+    {% for css in page.styles %}
+    <link href="/css/{{ css }}" media="screen" rel="stylesheet" type="text/css" />
+    {% endfor %}
+
     <!-- Fonts -->
     <link href="/font/stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
   </head>
