@@ -1,18 +1,40 @@
----
-layout: default
-title: nilenso systems
----
-<div class="logo-section section">
-  <img alt="nilenso systems logo" class="nilenso-logo" src="/images/nilenso-systems-vertical-400.png">
-  <img alt="nilenso systems logo (narrow)" class="nilenso-logo-narrow" src="/images/nilenso-systems-vertical-narrow-400.png">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Boutique open source consulting firm, specialising in multimedia and other low-level systems software.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      nilenso systems is now asymptotic.io!
+    </title>
 
-<div class="section bordered-section">
-  <div class="section-content">nilenso systems is an open-source consulting firm based out of Bangalore. We build
-    high-quality, low-level software running in the speakers, planes, robots and parking garages around you.
-  </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
 
-  <div class="section-content">
-    Read more about our <a href="/projects">work</a> or <a href="/contact">get in touch</a>.
-  </div>
-</div>
+<body class="bg-gray-50">
+    <div class="flex flex-col mx-auto max-w-lg align-center pt-32">
+	<div class="bg-red-50 p-4 w-72 mx-auto shadow">
+	    <img src="images/nilenso-systems-vertical-400.png" alt="nilenso systems">
+	</div>
+	<div class="p-4 mx-auto" style="font-family: 'Open Sans', sans-serif;">
+	... is now ...
+	</div>
+	<div class="bg-green-50 p-4 mx-auto shadow hover:shadow-md">
+	    <a href="https://asymptotic.io">
+		<img src="images/asymptotic-aqua.png" alt="asymptotic.io">
+	    </a>
+	</div>
+    </div>
+
+    <script>
+	window.onload = function () {
+	    window.setTimeout(function () {
+		window.location.assign("https://asymptotic.io");
+	    }, 5000);
+	};
+    </script>
+</body>
+</html>
+
